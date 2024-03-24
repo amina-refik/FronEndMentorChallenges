@@ -1,0 +1,114 @@
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+  }
+body{
+    font-size:16px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    background-color: var(--Yellow);
+}
+
+main{
+    display:flex;
+    height:100vh;
+}
+
+.review_card{
+    background-color: var(--White);
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    row-gap:22px;
+    
+    padding:1.2em;
+    border-radius: 1em;
+    border-color: var(--Black);
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0.5em 0.5em  var(--Black);
+
+}
+
+.card_image{
+    margin:0;
+    img{
+        border-radius: 1em;
+    }
+}
+
+.card_tags{
+    background-color: var(--Yellow);
+    padding:0.5em 0.7em 0.5em 0.7em;
+    border-radius: 0.3em;
+    width: min-content;
+    
+
+}
+
+.card-title{
+    
+    margin:0;
+}
+
+.card-text{
+    color: var(--Grey);
+    width:336px;
+    margin:0;
+    line-height: 18pt;
+}
+
+.review_card:active{
+    box-shadow: 1em 1em  var(--Black);
+    .card-title{
+        color: var(--Yellow);
+    }
+}
+
+.card-profile{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 12px;
+    img{
+        width:32px;
+    }
+    figcaption{
+        font-weight: 800;
+        font-size: 14px;
+    }
+}
+
+.card-filters{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size:13px;
+    }
+    .card-text{
+        width: 275px;
+        line-height: 15pt;
+    }
+    .card_image img{
+        height:201px;
+        width: 275px;
+        object-fit: cover;
+    }
+    .review_card{
+        padding: 1.7em;
+        row-gap: 20px;
+    }
+    .card-filters, .card-profile figcaption{
+        font-size:12px;
+    }
+
+  }

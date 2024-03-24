@@ -1,0 +1,79 @@
+:root {
+    --Primary: hsl(75, 94%, 57%);/*green*/
+    --White: hsl(0, 0%, 100%);
+    --Gray: hsl(0, 0%, 20%);
+    --DarkGray: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+  }
+
+  body{
+    background-color: var(--OffBlack);
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height:100vh;
+    margin: 0;
+  }
+  .developer-card{
+    background-color: var(--DarkGray);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0.5em;
+    padding:40px;
+    width: fit-content;
+  }
+
+  .developer-avatar{
+    margin:0;
+    img{
+        width:88px;
+        border-radius: 44px;
+    }
+    
+  }
+
+  .developer-social ul {
+        padding:0;
+        margin:0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 14px;
+        font-weight: 600;
+    li{
+        background-color: var(--Gray);
+        list-style-type: none ;
+        width:305px;
+        border-radius: 6px;
+        padding-top:15px;
+        padding-bottom:15px;
+        font-style: normal;   
+        a{
+            color:white;
+            text-decoration: none;
+        }
+    }
+  }
+
+  .developer-locality{
+    color: var(--Primary);
+    font-weight: 600;
+    font-style: normal;   
+  }
+
+  .developer-about{
+    margin-bottom: 25px;
+    margin-top: 28px;
+  }
+
+  .developer-name{
+    font-weight: 700;
+    margin-bottom: 11px;
+    margin-top: 26px;
+    font-size: 24px;
+  }
