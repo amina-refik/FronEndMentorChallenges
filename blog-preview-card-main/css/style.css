@@ -1,5 +1,5 @@
 :root {
-    --Yellow: hsl(47, 88%, 63%);
+    --Primary: hsl(47, 88%, 63%);
     --White: hsl(0, 0%, 100%);
     --Grey: hsl(0, 0%, 50%);
     --Black: hsl(0, 0%, 7%);
@@ -8,7 +8,7 @@ body{
     font-size:16px;
     font-family: "Figtree", sans-serif;
     font-weight: 500;
-    background-color: var(--Yellow);
+    background-color: var(--Primary);
 }
 
 main{
@@ -29,7 +29,7 @@ main{
     border-style: solid;
     border-width: 1px;
     box-shadow: 0.5em 0.5em  var(--Black);
-
+    cursor:pointer;
 }
 
 .card_image{
@@ -40,7 +40,7 @@ main{
 }
 
 .card_tags{
-    background-color: var(--Yellow);
+    background-color: var(--Primary);
     padding:0.5em 0.7em 0.5em 0.7em;
     border-radius: 0.3em;
     width: min-content;
@@ -63,7 +63,7 @@ main{
 .review_card:active{
     box-shadow: 1em 1em  var(--Black);
     .card-title{
-        color: var(--Yellow);
+        color: var(--Primary);
     }
 }
 
