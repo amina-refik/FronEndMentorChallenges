@@ -34,9 +34,10 @@ main{
 
 .card_image{
     margin:0;
-    img{
-        border-radius: 1em;
-    }
+}
+
+.card_image img{
+    border-radius: 1em;
 }
 
 .card_tags{
@@ -62,9 +63,11 @@ main{
 
 .review_card:active{
     box-shadow: 1em 1em  var(--Black);
-    .card-title{
-        color: var(--Primary);
-    }
+
+}
+
+.review_card:active .card-title{
+    color: var(--Primary);
 }
 
 .card-profile{
@@ -73,13 +76,15 @@ main{
     flex-direction: row;
     align-items: center;
     column-gap: 12px;
-    img{
-        width:32px;
-    }
-    figcaption{
-        font-weight: 800;
-        font-size: 14px;
-    }
+
+}
+.card-profile img{
+    width:32px;
+}
+
+.card-profile figcaption{
+    font-weight: 800;
+    font-size: 14px;
 }
 
 .card-filters{
