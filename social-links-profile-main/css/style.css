@@ -18,6 +18,10 @@
     align-items: center; 
     height:100vh;
     margin: 0;
+
+    background-image: url("../design/mobile-design.jpg");
+    background-repeat: no-repeat;
+    background-size: 375px;
   }
   .developer-card{
     background-color: var(--DarkGray);
@@ -27,6 +31,7 @@
     border-radius: 0.5em;
     padding:40px;
     width: fit-content;
+    opacity:0.5;
   }
 
   .developer-avatar{
@@ -76,4 +81,16 @@
     margin-bottom: 11px;
     margin-top: 26px;
     font-size: 24px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .developer-social ul li{
+      width:280px;
+    }
+    .developer-card{
+      padding: 23px;
+    }
+    .developer-name{
+      margin-bottom: 10px;
+    }
   }
