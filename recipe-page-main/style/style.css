@@ -13,14 +13,12 @@
 body{
     background-color: var(--Eggshell);
     font-size: 16px;
-    line-height:23px;
+    line-height:1.45rem;
     font-family: "Outfit", sans-serif;
     font-weight: 400;
     color: var(--WengeBrown);
 
-    /* background-image: url("../design/mobile-design.jpg");
-    background-repeat: no-repeat;
-    background-size: 728px; */
+
     margin:0;
   }
 
@@ -30,35 +28,37 @@ h1,h2{
 } 
 h1{
     color:var(--DarkCharcoal);
-    font-size: 40px;
-    margin-bottom: 17px;
+    font-size: 2.5rem; 
+    margin-bottom: 1.5rem; 
+    line-height: 1em;
+    margin-top: 2.5rem; 
 }
 .about{
     margin-top: 0px;
-    margin-bottom: 26px;
+    margin-bottom: 2rem;
 }
 
 h2{
     color:var(--Primary-Nutmeg);
-    font-size: 28px;
-    margin-top:27px;
-    margin-bottom: 18px;
+    font-size: 1.75rem;
+    margin-top:2.2rem;
+    margin-bottom: 1.64rem;
+    
 }
 
 .preparation_time h2{
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 0px;
 }
 .recipe{
     background-color:var(--White);
-    width:654px;
+    width:62ch;
     padding:40px;
     border-radius: 21px;
     margin: auto;
-    margin-top:120px;
-    margin-bottom:120px;
-    
-    /* opacity:0.3; */
+    margin-top:7.6rem;
+    margin-bottom:7.6rem;
+ 
 }
 .recipe_image{
     margin:0;
@@ -90,37 +90,39 @@ ol li::marker {
 h3{
     display: inline-block;
     margin:0;
-    font-size: 16px;
+    font-size: 1rem;
     
 }
 
 .preparation_time{
     background-color: var(--RoseWhite);
-    padding:30px;
+    padding:1.7rem;
     border-radius: 9px;
     
 }
 
 ul li{
-    padding-left:21px;
+    padding-left:1.2rem;
     
 }
 
+
 ul li:not(:last-child){
-    margin-bottom: 12px;
+    margin-bottom: 0.55rem;
 }
 ul{
-    padding-left:20px;
+    padding-left:1.35rem;
     margin-bottom: 0;
+    margin-top: 0.93rem;
 }
 
 ol li{
-    padding-left:13px;
-    margin-bottom: 10px;
+    padding-left:0.94rem;
+    margin-bottom: 0.57rem;
 }
 
 ol{
-    padding-left: 27px;
+    padding-left: 1.56rem;
 }
 
 .nutrition tr {
@@ -134,7 +136,7 @@ ol{
     
     width:100%;
     vertical-align: baseline;
-    padding-top: 14px;
+    padding-top: 0.9rem;
     
     
     text-align: left;
@@ -142,16 +144,16 @@ ol{
 
 .nutrition tr th:not(:last-child),.nutrition tr td:not(:last-child){
     border-bottom: 1px solid var(--LightGrey);
-    padding-bottom: 13px;
+    padding-bottom: 0.6rem;
 }
 
 .nutrition th{
     font-weight: 400;
-    padding-left: 32px;
+    padding-left: 1.9rem;
 }
 .nutrition td{
     color:var(--Primary-Nutmeg);
-    padding-left: 12px;
+    padding-left: 0.6rem;
     font-weight: 700;
 }
 
@@ -165,30 +167,30 @@ ol{
 }
 
 .ingredients, .instructions{
-    margin-bottom: 33px;
+    margin-bottom: 2.1rem;
 }
 .nutrition p{
-    margin-bottom: 12px;
+    margin-bottom: 0.54rem;
 }
 
 @media only screen and (max-width: 735px) {
     .recipe{
         padding:0;
+        padding-bottom:40px;
         margin:0;
-        width:100%
-    }
-    h1{
-        font-size: 70px;
-        line-height: 70px;
-    }
-    section{
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-    body{
-        font-size:31px;
-        line-height: 50px;
+        width:100%;
+        border-radius: 0;
     }
 
+    section{
+        margin-left: 2rem;
+        margin-right: 1.9rem;
+    }
+    h1{
+        font-size: 2.25rem;  
+    }
+    .recipe_image img{
+        border-radius: 0;
+    }
 
   }
